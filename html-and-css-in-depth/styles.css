@@ -127,8 +127,7 @@ article {
     line-height: 1.6;
 }
 
-/* Jewellery Categories - 3 Column Layout */
-
+/* Categories Section */
 .jewellery-categories {
     margin: 60px 0;
     text-align: center;
@@ -140,52 +139,75 @@ article {
     color: #222;
 }
 
+/* 3-Column Grid */
 .category-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
+/* Category Card with background image */
 .category-card {
-    background-color: #fff;
-    border: 1px solid #ccc;
+    position: relative;
+    background-size: cover;
+    background-position: center;
     border-radius: 8px;
+    min-height: 300px;
     padding: 20px;
-    text-align: left;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Dark overlay for text readability */
+.category-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.category-card h3,
+.category-card p {
+    position: relative;
+    z-index: 1;
+    margin: 0;
 }
 
 .category-card h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #444;
 }
 
 .category-card p {
     font-size: 1rem;
-    color: #333;
     line-height: 1.5;
 }
 
+/* Specific background images */
+.category-card.engagement {
+    background-image: url('assets/engagement.jpg');
+}
+
+.category-card.wedding {
+    background-image: url('assets/couple-white-gold-wedding-rings-diamonds-black-background-pair-silver-diamond-accents-357751860.webp');
+}
+
+.category-card.anniversary {
+    background-image: url('assets/anniversary.jpg');
+}
+
+/* Responsive fallback */
 @media (max-width: 900px) {
     .category-grid {
         grid-template-columns: 1fr;
     }
 }
 
-
-
-.column {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    max-width: 800px;
-}
-
-.column img {
-    width: 50%;
-    margin: 0 10px;
-}
 
 footer {
     color: #fff;
