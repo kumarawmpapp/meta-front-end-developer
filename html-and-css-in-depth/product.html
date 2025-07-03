@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jewellery Products - Mangata & Gallo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Basic product grid styling */
+    .product-grid {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      font-family: Lato, sans-serif;
+      color: #333;
+    }
+
+    .product-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 15px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .product-info h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.2rem;
+    }
+
+    .product-info p {
+      flex-grow: 1;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+
+    .product-info .price {
+      font-weight: bold;
+      color: #b12704;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .product-info button {
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .product-info button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Mangata & Gallo</h1>
+</header>
+
+<main>
+  <section class="product-grid">
+    <article class="product-card">
+      <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=600&q=80" alt="Classic Engagement Ring" />
+      <div class="product-info">
+        <h3>Classic Engagement Ring</h3>
+        <p>A beautifully crafted diamond ring symbolizing eternal love.</p>
+        <div class="price">$1,499</div>
+        <button>Add to Cart</button>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <img src="https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=600&q=80" alt="Elegant Wedding Band" />
+      <div class="product-info">
+        <h3>Elegant Wedding Band</h3>
+        <p>Timeless wedding band handcrafted with high-quality materials.</p>
+        <div class="price">$799</div>
+        <button>Add to Cart</button>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <img src="https://images.unsplash.com/photo-1603354350317-68b8c1f8fa0d?auto=format&fit=crop&w=600&q=80" alt="Anniversary Necklace" />
+      <div class="product-info">
+        <h3>Anniversary Necklace</h3>
+        <p>A stunning necklace to celebrate your special milestones together.</p>
+        <div class="price">$950</div>
+        <button>Add to Cart</button>
+      </div>
+    </article>
+  </section>
+</main>
+
+<footer style="background:#333; color:#fff; padding: 1rem; text-align:center;">
+  &copy; 2025 Mangata & Gallo
+</footer>
+</body>
+</html>
