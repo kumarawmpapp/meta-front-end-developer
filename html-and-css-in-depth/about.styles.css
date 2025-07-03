@@ -1,0 +1,23 @@
+/* About Page Specific Styles */
+
+.about-main {
+    display: flex;
+    flex-direction: column; /* Ensures vertical stacking */
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-family: Lato, sans-serif;
+    color: #fff;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Space between heading and paragraphs */
+}
+
+.about-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
