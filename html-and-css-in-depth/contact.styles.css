@@ -2,8 +2,6 @@
 
 .contact-main {
     padding: 2rem 5%;
-    font-family: Lato, sans-serif;
-    color: #333;
 }
 
 .contact-wrapper {
@@ -28,9 +26,9 @@
 }
 
 .contact-form h2,
-.contact-info h3 {
+.contact-info h3, .contact-info p {
     margin-bottom: 1rem;
-    color: #222;
+    color: #fff;
 }
 
 input,
@@ -46,7 +44,7 @@ textarea {
 button {
     width: fit-content;
     padding: 10px 15px;
-    background-color: #333;
+    background-color: #222;
     color: #fff;
     border: none;
     border-radius: 5px;
