@@ -7,7 +7,7 @@ html, body {
     margin-left: 5%;
     margin-right: 5%;
     padding: 0;
-    background-color: #EDEFEE;
+    background-color: #333;
 }
 
 h1 {
@@ -19,7 +19,6 @@ h2 {
 }
 
 header {
-    background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -76,10 +75,10 @@ article {
 
 /* Jewellery Promo Styles */
 
+/* Full-Width Jewellery Promo Section */
+
 .promo-section {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+    width: 100%;
     margin-top: 40px;
     margin-bottom: 40px;
 }
@@ -89,16 +88,14 @@ article {
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
-    background-color: #fff;
-    max-width: 800px;
     width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .promo-image {
     width: 100%;
-    height: auto;
     display: block;
+    height: auto;
 }
 
 .discount-label {
@@ -108,7 +105,7 @@ article {
     background-color: rgba(255, 0, 0, 0.85);
     color: #fff;
     padding: 10px 15px;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     border-radius: 5px;
     z-index: 1;
@@ -121,14 +118,15 @@ article {
 .promo-description h2 {
     font-size: 2rem;
     margin-top: 0;
-    color: #222;
+    color: #fff;
 }
 
 .promo-description p {
     font-size: 1rem;
-    color: #333;
+    color: #fff;
     line-height: 1.6;
 }
+
 
 .column {
     display: flex;
@@ -143,7 +141,6 @@ article {
 }
 
 footer {
-    background-color: #333;
     color: #fff;
     padding: 20px;
     display: flex;
